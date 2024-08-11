@@ -1,5 +1,6 @@
 package control_flow
 
+//For condition
 fun ifCondition(){
     val num1:Int = 20
     val num2:Int = 10
@@ -14,8 +15,8 @@ fun ifCondition(){
     println(if(num1 < num2) 20 else "You wrong")
 
 
-    //When condition (same as switch condition)
 
+//When condition (same as switch condition)
     val color = "red"
 
     when(color){
@@ -29,13 +30,56 @@ fun ifCondition(){
     }
 }
 
+//For loop
 
-fun forLoop(){
-    for (number in 1..5){
+/**
+ * In Kotlin, when you use a for loop with a range, the loop automatically iterates over each value in the specified range(++ or --)
+ *
+ * Ranges
+ *  1..4 is equivalent to 1, 2, 3, 4
+ *  1..<4 is equivalent to 1, 2, 3
+ *  4 downTo 1 is equivalent to 4, 3, 2, 1
+ *  1..5 step 2 is equivalent to 1, 3, 5 (step 2 = increment by 2)
+ *  These ranges can be used with Char type
+ *      'a'..'d' is equivalent to 'a', 'b', 'c', 'd'
+ *      'z' downTo 's' step 2 is equivalent to 'z', 'x', 'v', 't'
+ */
+
+fun forLoop1(){
+    for (number in 1..10){   //initial number=1 and execute until number=10
         println(number)
     }
 }
 
+
+fun forLoop2(){
+    for (number in 1..<10){    //initial number=1 and execute until number=9
+        println(number)
+    }
+}
+
+
+fun forLoop3(){
+    for (number in 10 downTo 1){
+        println(number)
+    }
+}
+
+
+fun forLoop4(){
+    for (number in 1..10 step 2){
+        println(number)
+    }
+}
+
+fun forLoop5(){
+    val fruits = listOf("mange","apple","orange","banana","papaya")
+    for (number in fruits){    //loop that iterates over each element in the fruits list.The loop variable items takes on the value of each element in the list one by one
+        println(number)
+    }
+}
+
+
 fun main(){
-    forLoop()
+
 }
