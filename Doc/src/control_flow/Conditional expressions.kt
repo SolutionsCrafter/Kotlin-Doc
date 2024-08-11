@@ -30,6 +30,7 @@ fun ifCondition(){
     }
 }
 
+
 //For loop
 
 /**
@@ -77,6 +78,31 @@ fun forLoop5(){
     for (number in fruits){    //loop that iterates over each element in the fruits list.The loop variable items takes on the value of each element in the list one by one
         println(number)
     }
+}
+
+
+//While loop
+
+/**
+ * while can be used in two ways:
+ *      To execute a code block while a conditional expression is true. (while)
+ *      To execute the code block first and then check the conditional expression. (do-while)
+ */
+
+fun whileLoop1(){
+    var number = 0
+    while (number < 10){
+        println(number)
+        number++
+    }
+}
+
+fun whileLoop2(){
+    var number = 0
+    do {
+        println(number)
+        number++
+    }while (number < 10)
 }
 
 
