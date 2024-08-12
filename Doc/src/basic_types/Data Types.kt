@@ -68,5 +68,57 @@ fun main() {
     var myCoor2: String? = "red" //This can be null
 
 
+//Number conversions to other types:
+    /**
+     * toByte(): Byte
+     * toShort(): Short
+     * toInt(): Int
+     * toLong(): Long
+     * toFloat(): Float
+     * toDouble(): Double
+     */
+
+    /** Can do:
+     *      Between Numeric Types: Int,Double,Float....
+     *      Numeric types to String: (Int,Double,Float) to String.
+     *      String(numeric values) to numeric types. Eg: "12345" to Int
+     */
+
+    /** Cannot do:
+     *      String(not numeric value) to Numeric types. Eg: "Hello" to Int
+     */
+    println("\n   Number conversions")
+
+    val aString:String = "12345"
+    val aInt:Int = 200
+    val aDouble:Double = 10.27
+
+    val x:Int = aDouble.toInt()
+    println(x)
+
+    val y:Float = aInt.toFloat()
+    println(y)
+
+    val z:String = aInt.toString()
+    println(z)
+
+    val n:Double = aString.toDouble()
+    println(n)
+
+//Characters
+
+    /**
+     *  \t – tab
+     *   \b – backspace
+     *  \n – new line (LF)
+     *  \r – carriage return (CR)
+     *  \' – single quotation mark
+     *  \" – double quotation mark
+     *  \\ – backslash
+     *  \$ – dollar sign
+     */
+
+    println("\nHello!\t....\n200\$\n\"Characters\'\t\\")
+
 
 }
