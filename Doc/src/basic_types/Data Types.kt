@@ -61,8 +61,12 @@ fun main() {
      *       Less Verbose: This is more concise and can make your code cleaner when the type can be easily inferred.
      */
 
+//Null safety
 
-    
+    var myColor1: String = "red" //This cannot be null
+
+    var myCoor2: String? = "red" //This can be null
+
 
 
 }
