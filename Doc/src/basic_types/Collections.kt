@@ -169,11 +169,38 @@ fun map(){
 
 }
 
+//Array
 
+//An array is a data structure that holds a fixed number of values of the same type or its subtypes.
+fun array(){
+    var rivers = arrayOf("Nile", "Amazon", "Yangtze")
 
+    val nullArray:Array<Int?> = arrayOfNulls(4)
 
+    /**
+     * To print the contents of the array in a more readable format, you should use the joinToString() function,
+       which converts the array elements into a string separated by a specified delimiter.
+     */
+
+    /**     joinToString()
+     * Purpose: Creates a string representation of the array by concatenating its elements into a single string,
+       with optional separators, prefixes, and suffixes.
+     */
+
+    println(rivers.joinToString())
+
+    println(rivers[1])
+
+    println(nullArray.joinToString())
+
+    /**     Both types are same
+     * var exampleArray = emptyArray<String>()
+     * var exampleArray: Array<String> = emptyArray()
+     */
+
+}
 
 
 fun main(){
-
+    array()
 }
